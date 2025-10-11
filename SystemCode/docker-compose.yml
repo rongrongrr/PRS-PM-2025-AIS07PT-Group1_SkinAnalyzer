@@ -9,5 +9,5 @@ services:
       - PYTHONWARNINGS=ignore::UserWarning
 
   web:
-    build: ./frontend_v2
+    build: ./frontend
     ports: ["3000:3000"]
