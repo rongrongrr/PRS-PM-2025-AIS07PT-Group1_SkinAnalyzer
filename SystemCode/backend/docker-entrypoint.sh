@@ -3,11 +3,15 @@ set -e
 
 cd /app
 
-# 1. unzip only if the pickle is missing
-if [ ! -f combined_data.pkl ]; then
-  echo "📦  Extracting combined_data.pkl..."
-  unzip -o combined_data.pkl.zip
-fi
+# 2. hand off to uvicorn with debugging enabled (also exposes debug-level logs)
+export PYTHONUNBUFFERED=1
+export PYTHONPATH=/app
 
-# 2. hand off to uvicorn (PID 1 stays tini → handles signals properly)
-exec uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+# Set an environment variable for debugging if desired (optional)
+export LOG_LEVEL=debug
+
+# You can set additional debug options or envs here, e.g.:
+# export SOME_CUSTOM_DEBUG_SETTING=1
+
+# Run uvicorn with debug logging
+exec uvicorn main:app --host 0.0.0.0 --port 8000 --reload --log-level debug

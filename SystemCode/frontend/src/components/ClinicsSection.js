@@ -76,7 +76,8 @@ const ClinicsSection = () => {
                 <span>{clinic.address}</span>
               </div>
               <div className="flex items-center text-sm text-gray-500 mb-2">
-                <span>{clinic.rating}</span>
+                <span>{clinic.rating} <br></br>{clinic.distance_text}</span>
+                    
               </div>
               <button className="text-red-600 text-sm font-medium hover:text-red-700">
                 View Details →

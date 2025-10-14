@@ -7,6 +7,15 @@ import base64
 from infer import run_inference_and_annotate
 from PIL import Image
 import io
+from typing import Optional
+import logging 
+logging.basicConfig(level=logging.INFO)
+
+
+from clinics import (
+    find_nearest_clinics,
+    validate_coordinates
+)
 
 app = FastAPI()
 
@@ -77,36 +86,30 @@ def get_condition_info(name: str = Query(..., description="Full name and abbrevi
         content={"error": "Condition info not found"}
     )
 
-# Dummy clinics data (matches frontend placeholder)
-CLINICS_DATA = [
-    {
-        "name": "Singapore General Hospital",
-        "department": "Dermatology Department",
-        "address": "Outram Road, Singapore 169608",
-        "rating": "⭐ 4.2 • 2.3 km away",
-        "lat": 1.2789,
-        "lng": 103.8345
-    },
-    {
-        "name": "National Skin Centre",
-        "department": "Specialist Dermatology Clinic",
-        "address": "1 Mandalay Road, Singapore 308205",
-        "rating": "⭐ 4.5 • 3.1 km away",
-        "lat": 1.3211,
-        "lng": 103.8483
-    },
-    {
-        "name": "Mount Elizabeth Medical Centre",
-        "department": "Private Dermatology Practice",
-        "address": "3 Mount Elizabeth, Singapore 228510",
-        "rating": "⭐ 4.3 • 1.8 km away",
-        "lat": 1.3048,
-        "lng": 103.8341
-    }
-]
-
 @app.get("/clinics")
-def get_clinics(lat: float = Query(None), lng: float = Query(None)):
-    # For now, just return all clinics (placeholder)
-    # In future, filter/sort by distance using lat/lng
-    return JSONResponse(content=CLINICS_DATA)
+def get_clinics(
+    lat: Optional[float] = Query(None, description="User's latitude"),
+    lng: Optional[float] = Query(None, description="User's longitude"),
+):
+    try:
+        if lat is not None and lng is not None:
+            # Validate coordinates
+            is_valid, error_msg = validate_coordinates(lat, lng)
+
+            if not is_valid:
+                return JSONResponse(
+                    status_code=400,
+                    content={"error": error_msg}
+                )
+            
+            nearest_clinics = find_nearest_clinics(
+                lat, lng
+            )
+            
+            return nearest_clinics
+
+    except Exception as e:
+        return JSONResponse(
+            status_code=500,
+            content={"error": f"Server error: {str(e)}"}
+        )

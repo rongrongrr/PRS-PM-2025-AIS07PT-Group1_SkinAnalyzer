@@ -6,8 +6,13 @@ ENV PYTHONWARNINGS=ignore::UserWarning
 
 # 1. unzip + tini for a clean PID 1
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends unzip tini && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y --no-install-recommends \
+    unzip \
+    tini \
+    dos2unix \
+    libgl1 \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
 
 # 2. pip install dependencies
 COPY requirements.txt .
