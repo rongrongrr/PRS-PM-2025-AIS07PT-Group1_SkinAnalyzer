@@ -1,7 +1,16 @@
+version: '3.8'
 services:
+  ollama:
+    image: ollama/ollama:latest 
+    ports: ["11434:11434"]
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
   api:
     build: ./backend
     ports: ["8000:8000"]
+    depends_on: ["ollama"]
     volumes:
       - ./backend:/app
       - ./backend/static:/app/static
@@ -11,3 +20,6 @@ services:
   web:
     build: ./frontend
     ports: ["3000:3000"]
+
+volumes:
+  ollama_data:

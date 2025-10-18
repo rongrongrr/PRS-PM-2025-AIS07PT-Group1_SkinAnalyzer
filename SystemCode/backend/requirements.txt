@@ -5,3 +5,4 @@ pillow
 torch
 numpy
 python-multipart
+requests

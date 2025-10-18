@@ -8,7 +8,10 @@
 ## Run this command in the terminal once Docker has been setup & initialized
 
 ```bash
+docker compose exec ollama ollama pull qwen3:0.6b
+
 docker compose up --build
+
 ```
 
 * Assuming your docker build went well you should see a message like this:

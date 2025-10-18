@@ -11,7 +11,7 @@ from typing import Optional
 import logging 
 logging.basicConfig(level=logging.INFO)
 
-
+import requests
 from clinics import (
     find_nearest_clinics,
     validate_coordinates
@@ -78,12 +78,16 @@ CONDITION_DATABASE = {
 
 @app.get("/condition-info")
 def get_condition_info(name: str = Query(..., description="Full name and abbreviation")):
-    info = CONDITION_DATABASE.get(name)
-    if info:
-        return info
+    response = requests.post("http://ollama:11434/api/chat", json={
+        "model": "qwen3:0.6b", 
+        "messages": [
+            {"role": "user", "content": f"Explain the condition {name} simply and under 50 words."}
+        ],
+        "stream": False
+    })
     return JSONResponse(
-        status_code=404,
-        content={"error": "Condition info not found"}
+        status_code=200,
+        content={"message": response.json()['message']['content']}
     )
 
 @app.get("/clinics")
