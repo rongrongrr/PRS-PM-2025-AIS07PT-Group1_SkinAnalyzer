@@ -1,6 +1,6 @@
 ﻿## SECTION 1 : PROJECT TITLE
 
-## Dengue Outbreak Prediction System
+## Skin Analyzer
 
 ---
 

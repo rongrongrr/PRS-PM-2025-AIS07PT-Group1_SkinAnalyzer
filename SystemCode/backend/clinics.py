@@ -487,21 +487,6 @@ CLINICS_DATA = [
             "saturday": "8:30 AM - 12:30 PM",
             "sunday": "8:30 AM - 12:30 PM"
         }
-    }
-]
-        "lat": 1.3398,
-        "lng": 103.7251,
-        "specialties": ["Basic Dermatology", "Skin Infections", "Allergies"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "8:00 AM - 9:00 PM",
-            "tuesday": "8:00 AM - 9:00 PM",
-            "wednesday": "8:00 AM - 9:00 PM",
-            "thursday": "8:00 AM - 9:00 PM",
-            "friday": "8:00 AM - 9:00 PM",
-            "saturday": "8:00 AM - 5:00 PM",
-            "sunday": "8:00 AM - 1:00 PM"
-        }
     },
     {
         "id": "silver_cross",
@@ -1024,614 +1009,42 @@ CLINICS_DATA = [
         "address": "598 Punggol Waterway #01-04, Singapore 820598",
         "phone": "+65 6312 8081",
         "website": "https://www.northeastmedical.com.sg",
-        "rating": 4.0,SINGAPORE_MEDICAL_FACILITIES = [
-    # Public Hospitals and Medical Centers
-    {
-        "id": "skh",
-        "name": "Sengkang General Hospital",
-        "department": "Dermatology Department",
-        "address": "110 Sengkang East Way, Singapore 544886",
-        "phone": "+65 6930 6000",
-        "website": "https://www.skh.com.sg",
-        "rating": 4.2,
-        "lat": 1.3946,
-        "lng": 103.8939,
-        "specialties": ["General Dermatology", "Skin Allergies", "Pediatric Dermatology"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "8:00 AM - 5:30 PM",
-            "tuesday": "8:00 AM - 5:30 PM",
-            "wednesday": "8:00 AM - 5:30 PM",
-            "thursday": "8:00 AM - 5:30 PM",
-            "friday": "8:00 AM - 5:30 PM",
-            "saturday": "8:00 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "kkh",
-        "name": "KK Women's and Children's Hospital",
-        "department": "Dermatology Service",
-        "address": "100 Bukit Timah Road, Singapore 229899",
-        "phone": "+65 6225 5554",
-        "website": "https://www.kkh.com.sg",
-        "rating": 4.3,
-        "lat": 1.3108,
-        "lng": 103.8464,
-        "specialties": ["Pediatric Dermatology", "Neonatal Skin Conditions", "Genetic Skin Disorders"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "8:00 AM - 5:30 PM",
-            "tuesday": "8:00 AM - 5:30 PM",
-            "wednesday": "8:00 AM - 5:30 PM",
-            "thursday": "8:00 AM - 5:30 PM",
-            "friday": "8:00 AM - 5:30 PM",
-            "saturday": "8:00 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "alexandra",
-        "name": "Alexandra Hospital",
-        "department": "Specialist Outpatient Clinic - Dermatology",
-        "address": "378 Alexandra Road, Singapore 159964",
-        "phone": "+65 6472 2000",
-        "website": "https://www.ah.com.sg",
-        "rating": 4.1,
-        "lat": 1.2866,
-        "lng": 103.8013,
-        "specialties": ["General Dermatology", "Geriatric Skin Care", "Chronic Skin Conditions"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "8:30 AM - 5:00 PM",
-            "tuesday": "8:30 AM - 5:00 PM",
-            "wednesday": "8:30 AM - 5:00 PM",
-            "thursday": "8:30 AM - 5:00 PM",
-            "friday": "8:30 AM - 5:00 PM",
-            "saturday": "8:30 AM - 12:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    
-    # Private Hospitals and Medical Centers
-    {
-        "id": "mount_alvernia",
-        "name": "Mount Alvernia Hospital",
-        "department": "Medical Centre A - Dermatology",
-        "address": "820 Thomson Road, Singapore 574623",
-        "phone": "+65 6347 6688",
-        "website": "https://www.mtalvernia.sg",
-        "rating": 4.3,
-        "lat": 1.3419,
-        "lng": 103.8378,
-        "specialties": ["Skin Surgery", "Cosmetic Dermatology", "Skin Cancer Screening"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 6:00 PM",
-            "tuesday": "9:00 AM - 6:00 PM",
-            "wednesday": "9:00 AM - 6:00 PM",
-            "thursday": "9:00 AM - 6:00 PM",
-            "friday": "9:00 AM - 6:00 PM",
-            "saturday": "9:00 AM - 1:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "farrer_park",
-        "name": "Farrer Park Hospital",
-        "department": "Dermatology & Aesthetic Centre",
-        "address": "1 Farrer Park Station Road, Singapore 217562",
-        "phone": "+65 6363 1818",
-        "website": "https://www.farrerpark.com",
-        "rating": 4.4,
-        "lat": 1.3124,
-        "lng": 103.8542,
-        "specialties": ["Aesthetic Dermatology", "Laser Surgery", "Anti-Aging Treatments"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 6:00 PM",
-            "tuesday": "9:00 AM - 6:00 PM",
-            "wednesday": "9:00 AM - 6:00 PM",
-            "thursday": "9:00 AM - 6:00 PM",
-            "friday": "9:00 AM - 6:00 PM",
-            "saturday": "9:00 AM - 1:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    
-    # Specialist Clinics - Central Region
-    {
-        "id": "tsk_skin",
-        "name": "TSK Skin Specialist Clinic",
-        "department": "Dermatology",
-        "address": "1 Orchard Boulevard #03-02, Singapore 248649",
-        "phone": "+65 6235 5312",
-        "website": "https://www.tskskin.com",
-        "rating": 4.3,
-        "lat": 1.3041,
-        "lng": 103.8316,
-        "specialties": ["Acne Treatment", "Pigmentation", "Skin Rejuvenation"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 6:00 PM",
-            "tuesday": "9:00 AM - 6:00 PM",
-            "wednesday": "9:00 AM - 6:00 PM",
-            "thursday": "9:00 AM - 6:00 PM",
-            "friday": "9:00 AM - 6:00 PM",
-            "saturday": "9:00 AM - 1:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "dermatology_associates",
-        "name": "Dermatology Associates",
-        "department": "Specialist Dermatology",
-        "address": "3 Mount Elizabeth #14-11, Singapore 228510",
-        "phone": "+65 6737 8006",
-        "website": "https://www.dermatologyassociates.sg",
-        "rating": 4.5,
-        "lat": 1.3048,
-        "lng": 103.8341,
-        "specialties": ["Medical Dermatology", "Surgical Dermatology", "Cosmetic Procedures"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 5:30 PM",
-            "tuesday": "9:00 AM - 5:30 PM",
-            "wednesday": "9:00 AM - 5:30 PM",
-            "thursday": "9:00 AM - 5:30 PM",
-            "friday": "9:00 AM - 5:30 PM",
-            "saturday": "9:00 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "david_liew",
-        "name": "David Liew Dermatology",
-        "department": "Dermatology & Laser Centre",
-        "address": "6 Napier Road #10-06 Gleneagles, Singapore 258499",
-        "phone": "+65 6474 3118",
-        "website": "https://www.davidliewdermatology.com",
-        "rating": 4.4,
-        "lat": 1.3078,
-        "lng": 103.8201,
-        "specialties": ["Skin Cancer", "Mohs Surgery", "General Dermatology"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 5:00 PM",
-            "tuesday": "9:00 AM - 5:00 PM",
-            "wednesday": "9:00 AM - 5:00 PM",
-            "thursday": "9:00 AM - 5:00 PM",
-            "friday": "9:00 AM - 5:00 PM",
-            "saturday": "9:00 AM - 12:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    
-    # Polyclinics with Dermatology Services
-    {
-        "id": "bedok_poly",
-        "name": "Bedok Polyclinic",
-        "department": "Family Medicine with Dermatology Service",
-        "address": "11 Bedok North Street 1, Singapore 469662",
-        "phone": "+65 6343 1121",
-        "website": "https://www.singhealth.com.sg/polyclinics",
-        "rating": 3.8,
-        "lat": 1.3266,
-        "lng": 103.9311,
-        "specialties": ["Basic Dermatology", "Eczema", "Common Skin Conditions"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "8:00 AM - 4:30 PM",
-            "tuesday": "8:00 AM - 4:30 PM",
-            "wednesday": "8:00 AM - 4:30 PM",
-            "thursday": "8:00 AM - 4:30 PM",
-            "friday": "8:00 AM - 4:30 PM",
-            "saturday": "8:00 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "tampines_poly",
-        "name": "Tampines Polyclinic",
-        "department": "Family Medicine with Dermatology Referral",
-        "address": "1 Tampines Street 41, Singapore 529203",
-        "phone": "+65 6788 0833",
-        "website": "https://www.singhealth.com.sg/polyclinics",
-        "rating": 3.9,
-        "lat": 1.3578,
-        "lng": 103.9452,
-        "specialties": ["Primary Dermatology Care", "Skin Infections", "Allergies"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "8:00 AM - 4:30 PM",
-            "tuesday": "8:00 AM - 4:30 PM",
-            "wednesday": "8:00 AM - 4:30 PM",
-            "thursday": "8:00 AM - 4:30 PM",
-            "friday": "8:00 AM - 4:30 PM",
-            "saturday": "8:00 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    
-    # East Region Clinics
-    {
-        "id": "clifford_dispensary",
-        "name": "Clifford Dispensary Pte Ltd",
-        "department": "Dermatology Clinic",
-        "address": "24 Raffles Place #01-27, Singapore 048621",
-        "phone": "+65 6532 2489",
-        "website": "https://www.clifforddispensary.com",
         "rating": 4.0,
-        "lat": 1.2844,
-        "lng": 103.8520,
-        "specialties": ["Occupational Dermatology", "STD Screening", "General Skin Care"],
+        "lat": 1.4041,
+        "lng": 103.9124,
+        "specialties": ["Multi-Specialty", "General Practice", "Health Screening"],
         "insurance_accepted": True,
         "opening_hours": {
-            "monday": "8:30 AM - 5:30 PM",
-            "tuesday": "8:30 AM - 5:30 PM",
-            "wednesday": "8:30 AM - 5:30 PM",
-            "thursday": "8:30 AM - 5:30 PM",
-            "friday": "8:30 AM - 5:30 PM",
-            "saturday": "8:30 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "skin_physicians",
-        "name": "The Skin Physicians",
-        "department": "Dermatology & Aesthetic Medicine",
-        "address": "50 East Coast Road #01-01, Singapore 428769",
-        "phone": "+65 6348 4688",
-        "website": "https://www.theskinphysicians.com",
-        "rating": 4.2,
-        "lat": 1.3051,
-        "lng": 103.9042,
-        "specialties": ["Acne Scar Treatment", "Melasma", "Hair Loss"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:30 AM - 6:30 PM",
-            "tuesday": "9:30 AM - 6:30 PM",
-            "wednesday": "9:30 AM - 6:30 PM",
-            "thursday": "9:30 AM - 6:30 PM",
-            "friday": "9:30 AM - 6:30 PM",
-            "saturday": "9:30 AM - 1:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    
-    # West Region Clinics
-    {
-        "id": "jurong_medical",
-        "name": "Jurong Medical Centre",
-        "department": "Skin & Aesthetic Clinic",
-        "address": "2 Venture Drive #01-02, Singapore 608526",
-        "phone": "+65 6265 7981",
-        "website": "https://www.jurongmedical.com",
-        "rating": 4.1,
-        "lat": 1.3320,
-        "lng": 103.7471,
-        "specialties": ["General Dermatology", "Wart Removal", "Skin Tags"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 6:00 PM",
-            "tuesday": "9:00 AM - 6:00 PM",
-            "wednesday": "9:00 AM - 6:00 PM",
-            "thursday": "9:00 AM - 6:00 PM",
-            "friday": "9:00 AM - 6:00 PM",
-            "saturday": "9:00 AM - 1:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "clementi_derma",
-        "name": "Clementi Dermatology Clinic",
-        "department": "Specialist Dermatology",
-        "address": "442 Clementi Avenue 3 #01-95, Singapore 120442",
-        "phone": "+65 6774 1121",
-        "website": "https://www.clementiderma.com",
-        "rating": 4.0,
-        "lat": 1.3144,
-        "lng": 103.7651,
-        "specialties": ["Psoriasis", "Vitiligo", "Autoimmune Skin Conditions"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 5:00 PM",
-            "tuesday": "9:00 AM - 5:00 PM",
-            "wednesday": "9:00 AM - 5:00 PM",
-            "thursday": "9:00 AM - 5:00 PM",
-            "friday": "9:00 AM - 5:00 PM",
-            "saturday": "9:00 AM - 12:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    
-    # North Region Clinics
-    {
-        "id": "woodlands_health",
-        "name": "Woodlands Health Campus",
-        "department": "Integrated Dermatology Services",
-        "address": "2 Yishun Central 2, Singapore 768024",
-        "phone": "+65 6363 6363",
-        "website": "https://www.wh.com.sg",
-        "rating": 4.1,
-        "lat": 1.4304,
-        "lng": 103.8363,
-        "specialties": ["Community Dermatology", "Preventive Skin Care", "Chronic Disease Management"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "8:00 AM - 5:30 PM",
-            "tuesday": "8:00 AM - 5:30 PM",
-            "wednesday": "8:00 AM - 5:30 PM",
-            "thursday": "8:00 AM - 5:30 PM",
-            "friday": "8:00 AM - 5:30 PM",
-            "saturday": "8:00 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "yishun_specialist",
-        "name": "Yishun Specialist Clinic",
-        "department": "Dermatology Unit",
-        "address": "101 Yishun Avenue 5 #01-35, Singapore 760101",
-        "phone": "+65 6758 3636",
-        "website": "https://www.yishunspecialist.com",
-        "rating": 3.9,
-        "lat": 1.4290,
-        "lng": 103.8350,
-        "specialties": ["Family Dermatology", "Pediatric Skin", "Elderly Care"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 6:00 PM",
-            "tuesday": "9:00 AM - 6:00 PM",
-            "wednesday": "9:00 AM - 6:00 PM",
-            "thursday": "9:00 AM - 6:00 PM",
-            "friday": "9:00 AM - 6:00 PM",
-            "saturday": "9:00 AM - 1:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    
-    # Additional Specialist Clinics
-    {
-        "id": "apex_derma",
-        "name": "Apex Dermatology & Skin Surgery Centre",
-        "department": "Dermatological Surgery",
-        "address": "6 Shenton Way #15-08 OUE Downtown, Singapore 068809",
-        "phone": "+65 6222 2238",
-        "website": "https://www.apexderma.com",
-        "rating": 4.4,
-        "lat": 1.2783,
-        "lng": 103.8492,
-        "specialties": ["Mohs Surgery", "Skin Cancer", "Reconstructive Surgery"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 5:30 PM",
-            "tuesday": "9:00 AM - 5:30 PM",
-            "wednesday": "9:00 AM - 5:30 PM",
-            "thursday": "9:00 AM - 5:30 PM",
-            "friday": "9:00 AM - 5:30 PM",
-            "saturday": "9:00 AM - 12:30 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "skin_met",
-        "name": "SkinMet Medical & Aesthetic Clinic",
-        "department": "Medical Aesthetics",
-        "address": "111 Somerset Road #04-36, Singapore 238164",
-        "phone": "+65 6836 0123",
-        "website": "https://www.skinmet.com.sg",
-        "rating": 4.3,
-        "lat": 1.3007,
-        "lng": 103.8368,
-        "specialties": ["Chemical Peels", "Laser Therapy", "Injectables"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "10:00 AM - 7:00 PM",
-            "tuesday": "10:00 AM - 7:00 PM",
-            "wednesday": "10:00 AM - 7:00 PM",
-            "thursday": "10:00 AM - 7:00 PM",
-            "friday": "10:00 AM - 7:00 PM",
-            "saturday": "10:00 AM - 5:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "dermlove",
-        "name": "DermLove Skin Clinic",
-        "department": "Dermatology & Aesthetics",
-        "address": "391B Orchard Road #08-04 Ngee Ann City, Singapore 238874",
-        "phone": "+65 6734 1089",
-        "website": "https://www.dermlove.com.sg",
-        "rating": 4.2,
-        "lat": 1.3025,
-        "lng": 103.8347,
-        "specialties": ["K-Beauty Treatments", "Hydrafacial", "Skin Brightening"],
-        "insurance_accepted": False,
-        "opening_hours": {
-            "monday": "10:00 AM - 7:00 PM",
-            "tuesday": "10:00 AM - 7:00 PM",
-            "wednesday": "10:00 AM - 7:00 PM",
-            "thursday": "10:00 AM - 7:00 PM",
-            "friday": "10:00 AM - 7:00 PM",
-            "saturday": "10:00 AM - 6:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "sozo_aesthetic",
-        "name": "SOZO Aesthetic Clinic",
-        "department": "Aesthetic Medicine",
-        "address": "1 Raffles Place #05-19 One Raffles Place, Singapore 048616",
-        "phone": "+65 6935 7920",
-        "website": "https://www.sozoclinic.sg",
-        "rating": 4.5,
-        "lat": 1.2844,
-        "lng": 103.8510,
-        "specialties": ["Non-Surgical Facelifts", "Body Contouring", "Thread Lifts"],
-        "insurance_accepted": False,
-        "opening_hours": {
-            "monday": "10:00 AM - 7:00 PM",
-            "tuesday": "10:00 AM - 7:00 PM",
-            "wednesday": "10:00 AM - 7:00 PM",
-            "thursday": "10:00 AM - 7:00 PM",
-            "friday": "10:00 AM - 7:00 PM",
-            "saturday": "10:00 AM - 4:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "cambridge_medical",
-        "name": "Cambridge Medical Group",
-        "department": "Aesthetic & Laser Centre",
-        "address": "391A Orchard Road #15-02/03 Tower A, Singapore 238873",
-        "phone": "+65 6733 0777",
-        "website": "https://www.cambridgemedical.com.sg",
-        "rating": 4.4,
-        "lat": 1.3025,
-        "lng": 103.8347,
-        "specialties": ["Aesthetic Medicine", "Laser Treatments", "Body Sculpting"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 6:00 PM",
-            "tuesday": "9:00 AM - 6:00 PM",
-            "wednesday": "9:00 AM - 6:00 PM",
-            "thursday": "9:00 AM - 6:00 PM",
-            "friday": "9:00 AM - 6:00 PM",
-            "saturday": "9:00 AM - 4:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "oasis_medical",
-        "name": "Oasis Medical & Aesthetics Clinic",
-        "department": "Medical Aesthetics",
-        "address": "Camden Medical Centre #13-05, Singapore 248649",
-        "phone": "+65 6235 5566",
-        "website": "https://www.oasismedical.sg",
-        "rating": 4.2,
-        "lat": 1.3041,
-        "lng": 103.8316,
-        "specialties": ["Botox", "Fillers", "Skin Tightening"],
-        "insurance_accepted": False,
-        "opening_hours": {
-            "monday": "10:00 AM - 6:00 PM",
-            "tuesday": "10:00 AM - 6:00 PM",
-            "wednesday": "10:00 AM - 6:00 PM",
-            "thursday": "10:00 AM - 6:00 PM",
-            "friday": "10:00 AM - 6:00 PM",
-            "saturday": "10:00 AM - 4:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "astute_medical",
-        "name": "Astute Medical & Aesthetic Clinic",
-        "department": "Dermatology & Aesthetics",
-        "address": "350 Orchard Road #11-08 Shaw House, Singapore 238868",
-        "phone": "+65 6732 3801",
-        "website": "https://www.astutemedical.com",
-        "rating": 4.3,
-        "lat": 1.3056,
-        "lng": 103.8316,
-        "specialties": ["Medical Aesthetics", "Skin Analysis", "Customized Treatments"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:30 AM - 6:30 PM",
-            "tuesday": "9:30 AM - 6:30 PM",
-            "wednesday": "9:30 AM - 6:30 PM",
-            "thursday": "9:30 AM - 6:30 PM",
-            "friday": "9:30 AM - 6:30 PM",
-            "saturday": "9:30 AM - 2:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "radium_medical",
-        "name": "Radium Medical Aesthetics",
-        "department": "Aesthetic Medicine",
-        "address": "3 Temasek Boulevard #03-06 Suntec City, Singapore 038983",
-        "phone": "+65 6837 0507",
-        "website": "https://www.radiumaesthetics.com",
-        "rating": 4.1,
-        "lat": 1.2955,
-        "lng": 103.8599,
-        "specialties": ["Radiofrequency Treatments", "IPL", "Skin Resurfacing"],
-        "insurance_accepted": False,
-        "opening_hours": {
-            "monday": "11:00 AM - 8:00 PM",
-            "tuesday": "11:00 AM - 8:00 PM",
-            "wednesday": "11:00 AM - 8:00 PM",
-            "thursday": "11:00 AM - 8:00 PM",
-            "friday": "11:00 AM - 8:00 PM",
-            "saturday": "10:00 AM - 7:00 PM",
-            "sunday": "10:00 AM - 7:00 PM"
-        }
-    },
-    {
-        "id": "one_face",
-        "name": "One Face Clinic",
-        "department": "Plastic Surgery & Aesthetics",
-        "address": "1 Orchard Boulevard #13-01, Singapore 248649",
-        "phone": "+65 6222 2262",
-        "website": "https://www.oneface.sg",
-        "rating": 4.4,
-        "lat": 1.3041,
-        "lng": 103.8316,
-        "specialties": ["Facial Contouring", "Rhinoplasty", "Aesthetic Dermatology"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "9:00 AM - 6:00 PM",
-            "tuesday": "9:00 AM - 6:00 PM",
-            "wednesday": "9:00 AM - 6:00 PM",
-            "thursday": "9:00 AM - 6:00 PM",
-            "friday": "9:00 AM - 6:00 PM",
-            "saturday": "9:00 AM - 1:00 PM",
-            "sunday": "Closed"
-        }
-    },
-    {
-        "id": "lim_clinic",
-        "name": "Dr Lim & Partners Aesthetics",
-        "department": "Medical Aesthetics",
-        "address": "140 Arab Street, Singapore 199827",
-        "phone": "+65 6298 5173",
-        "website": "https://www.drlimandpartners.com",
-        "rating": 4.0,
-        "lat": 1.3019,
-        "lng": 103.8594,
-        "specialties": ["STD Treatment", "Men's Health", "Aesthetic Medicine"],
-        "insurance_accepted": True,
-        "opening_hours": {
-            "monday": "10:00 AM - 9:00 PM",
-            "tuesday": "10:00 AM - 9:00 PM",
-            "wednesday": "10:00 AM - 9:00 PM",
-            "thursday": "10:00 AM - 9:00 PM",
-            "friday": "10:00 AM - 9:00 PM",
-            "saturday": "10:00 AM - 9:00 PM",
-            "sunday": "10:00 AM - 9:00 PM"
+            "monday": "8:00 AM - 10:00 PM",
+            "tuesday": "8:00 AM - 10:00 PM",
+            "wednesday": "8:00 AM - 10:00 PM",
+            "thursday": "8:00 AM - 10:00 PM",
+            "friday": "8:00 AM - 10:00 PM",
+            "saturday": "8:00 AM - 10:00 PM",
+            "sunday": "8:00 AM - 10:00 PM"
         }
     }
 ]
 
+
 def calculate_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
     # Earth's radius in kilometers
     R = 6371.0
-    
+
     # Convert degrees to radians
     lat1_rad = math.radians(lat1)
     lng1_rad = math.radians(lng1)
     lat2_rad = math.radians(lat2)
     lng2_rad = math.radians(lng2)
-    
+
     # Differences
     dlat = lat2_rad - lat1_rad
     dlng = lng2_rad - lng1_rad
-    
+
     # Haversine formula
     a = math.sin(dlat / 2)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlng / 2)**2
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    
+
     distance = R * c
     return distance
 
@@ -1645,24 +1058,24 @@ def validate_coordinates(lat: float, lng: float) -> tuple[bool, Optional[str]]:
 
 
 def find_nearest_clinics(
-    user_lat: float, 
-    user_lng: float, 
+    user_lat: float,
+    user_lng: float,
 ) -> List[Dict[str, Any]]:
     clinics = CLINICS_DATA
     clinics_with_distance = []
- 
-    
+
+
     for clinic in clinics:
         clinic_copy = clinic.copy()
         distance = calculate_distance(
-            user_lat, user_lng, 
+            user_lat, user_lng,
             clinic['lat'], clinic['lng']
-        )        
+        )
         clinic_copy['distance_km'] = round(distance, 2)
         clinic_copy['distance_text'] = f"{round(distance, 1)} km away"
         clinic_copy['rating'] = f"⭐ {clinic['rating']}"
-        
+
         clinics_with_distance.append(clinic_copy)
-    
+
     clinics_with_distance.sort(key=lambda x: x['distance_km'])
     return clinics_with_distance
