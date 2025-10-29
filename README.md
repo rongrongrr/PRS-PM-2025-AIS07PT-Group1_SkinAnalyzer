@@ -6,23 +6,27 @@
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 
-Under Singapore’s tropical conditions and dense urban landscape, dengue fever continues to be a significant health concern, demanding targeted prevention strategies and data-driven predictive models. This project aims to develop a machine learning-based prediction system that can identify potential outbreak locations by analyzing key epidemiological, environmental, and weather-related factors.
+Skin cancer represents a significant global health burden, with prognosis critically dependent on early detection. However, access to specialist dermatological care is limited by workforce shortages and extended wait times, particularly in underserved communities. 
 
-By leveraging Intelligent Reasoning techniques and algorithms learned from course modules, the team will construct a predictive model that identifies meaningful relationships between these factors. The insights generated from this project aim to support dengue prevention efforts by strengthening prediction capabilities.
+This project presents an intelligent skin condition analyzer that leverages deep learning to provide preliminary screening of dermoscopic images. 
 
-This initiative is particularly relevant to Singapore, where the constant influx of dengue cases necessitates proactive and data-driven solutions. By leveraging local government data sources, such as the National Environment Agency and data.gov.sg, this system aims to provide valuable insights that can support ongoing efforts to predict and mitigate outbreaks more effectively.
+Using the HAM10000 dataset, we trained and evaluated two models: a custom CNN and a YOLOv10 Nano architecture. The YOLOv10 model demonstrated superior performance with enhanced accuracy and object localization capabilities, enabling both classification and spatial identification of lesions across seven diagnostic categories including melanoma, basal cell carcinoma, and actinic keratoses. 
 
-The primary goal of the project is to develop a model capable of delivering accurate predictions based on selected factors. Additionally, the project serves as an opportunity for us to apply Intelligent Reasoning concepts to a real-world problem, deepening our understanding of data-driven decision-making in epidemiological research.
+The system is deployed as a web application integrating AI-driven analysis, natural language medical explanations, and location-based clinic recommendations. This decision-support tool addresses critical gaps in healthcare accessibility while maintaining appropriate clinical safeguards through integrated disclaimers emphasizing professional consultation. 
+
+Our work demonstrates the feasibility of AI-assisted triage in dermatology, offering a scalable approach to improve early detection and reduce diagnostic delays in resource-constrained settings.
 
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
 | Official Full Name  | Student ID | Work Items                                                                             | Email                   |
 | :------------------ | :--------: | :------------------------------------------------------------------------------------- | :---------------------- |
-| Chan Jing Rong      | A0185806W  | Frontend Development, Backend Development, API Integration, Research, Reports, Testing | jingrong_chan@u.nus.edu |
-| Weiqiao Li          | A0314458B  | System Design, Backend Development, Research, Reports, Testing                         | e1503300@u.nus.edu      |
-| Brian Zheng         | A0132097H  | Model Training, Model Prediction, Data Processing, Research, Reports, Testing          | brian.zheng@u.nus.edu   |
-| Velu                | A0314464H  | Data Gathering, Data Preparation, Project Containerisation, Research, Reports, Testing | velu@u.nus.edu          |
-| Johann Oh Hock Seng | A0314457A  | Survey of Existing Approaches, Attempted Prediction Models, Research, Reports, Testing | johannoh@u.nus.edu      |
+| Chan Jing Rong      | A0185806W  | Research/Ideation, Frontend Development, Backend Development, API Integration, Reports, Slides, Testing | jingrong_chan@u.nus.edu |
+| Weiqiao Li          | A0314458B  | Research/Ideation, Backend Engineering, Deployment, Reports, Slides, Demo Video                        | e1503300@u.nus.edu      |
+| Brian Zheng         | A0132097H  | Research/Ideation, Training model, Reports, Slides, Testing          | brian.zheng@u.nus.edu   |
+| Velu                | A0314464H  | Research/Ideation, Training dataset preparation, Training models, Backend server layer, Reports, Slides, Testing
+ | velu@u.nus.edu          |
+| Johann Oh Hock Seng | A0314457A  | Research/Ideation, Dataset alternative research, Report, Slide, Testing
+ | johannoh@u.nus.edu      |
 
 ---
 
