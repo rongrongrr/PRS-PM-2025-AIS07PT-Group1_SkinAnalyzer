@@ -38,7 +38,7 @@ Our work demonstrates the feasibility of AI-assisted triage in dermatology, offe
 
 ## SECTION 5 : USER GUIDE
 
-### Dengue-Prediction Demo – Docker Edition 🐳
+### Skin Condition Analyzer Demo – Docker Edition 🐳
 
 #### Prerequisites
 
@@ -56,6 +56,6 @@ docker compose up --build
 
 #### Once your build completes go to your browser (preferably chrome) and open http://localhost:3000/
 
-- That's it! That link should open up the dengue prediction dashboard for you play with!
+- That's it! That link should open up the skin condition analyzer dashboard for you play with!
 
 
