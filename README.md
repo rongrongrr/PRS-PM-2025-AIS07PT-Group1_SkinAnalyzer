@@ -27,15 +27,12 @@ Our work demonstrates the feasibility of AI-assisted triage in dermatology, offe
 
 ---
 
-## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
+## SECTION 4 : PRESENTATION WITH USE CASE DEMO
 
-### System Design Video
+### Presentation
 
-[System Design Video](https://youtu.be/3JLRuQfs79w "System Design Video")
+[Presentation](https://youtu.be/3JLRuQfs79whttps://www.youtube.com/watch?v=-2Ba5dGC4Iw "Presentation")
 
-### Use Case Video
-
-[Use Case Video](https://youtu.be/VGXwk92z6Z0 "Use Case Video")
 
 ---
 
@@ -61,8 +58,4 @@ docker compose up --build
 
 - That's it! That link should open up the dengue prediction dashboard for you play with!
 
----
 
-## SECTION 6 : PROJECT REPORT / PAPER
-
-`Refer to project report at Github Folder: ProjectReport`
