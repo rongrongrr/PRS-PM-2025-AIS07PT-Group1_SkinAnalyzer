@@ -1,0 +1,9 @@
+FROM ollama/ollama:latest
+
+# Copy a script that will pull the model
+COPY pull-model.sh /pull-model.sh
+RUN chmod +x /pull-model.sh
+
+# Set the entrypoint to start ollama and pull model
+ENTRYPOINT ["/pull-model.sh"]
+
