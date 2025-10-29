@@ -2,7 +2,6 @@
 
 ## Skin Analyzer
 
----
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 
@@ -20,13 +19,11 @@ Our work demonstrates the feasibility of AI-assisted triage in dermatology, offe
 
 | Official Full Name  | Student ID | Work Items                                                                             | Email                   |
 | :------------------ | :--------: | :------------------------------------------------------------------------------------- | :---------------------- |
-| Chan Jing Rong      | A0185806W  | Research/Ideation, Frontend Development, Backend Development, API Integration, Reports, Slides, Testing | jingrong_chan@u.nus.edu |
-| Weiqiao Li          | A0314458B  | Research/Ideation, Backend Engineering, Deployment, Reports, Slides, Demo Video                        | e1503300@u.nus.edu      |
-| Brian Zheng         | A0132097H  | Research/Ideation, Training model, Reports, Slides, Testing          | brian.zheng@u.nus.edu   |
-| Velu                | A0314464H  | Research/Ideation, Training dataset preparation, Training models, Backend server layer, Reports, Slides, Testing
- | velu@u.nus.edu          |
-| Johann Oh Hock Seng | A0314457A  | Research/Ideation, Dataset alternative research, Report, Slide, Testing
- | johannoh@u.nus.edu      |
+| Chan Jing Rong      | A0185806W  | Research/Ideation, Frontend Development, Backend Development, API Integration, Reports, Slides, Testing |jingrong_chan@u.nus.edu |
+| Weiqiao Li          | A0314458B  | Research/Ideation, Backend Engineering, Deployment, Reports, Slides, Demo Video | e1503300@u.nus.edu      |
+| Brian Zheng         | A0132097H  | Research/Ideation, Training model, Reports, Slides, Testing | brian.zheng@u.nus.edu   |
+| Velu                | A0314464H  | Research/Ideation, Training dataset preparation, Training models, Backend server layer, Reports, Slides, Testing| velu@u.nus.edu          |
+| Johann Oh Hock Seng | A0314457A  | Research/Ideation, Dataset alternative research, Report, Slide, Testing | johannoh@u.nus.edu      |
 
 ---
 
