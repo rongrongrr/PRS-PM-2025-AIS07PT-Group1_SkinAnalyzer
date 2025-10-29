@@ -48,14 +48,14 @@ Our work demonstrates the feasibility of AI-assisted triage in dermatology, offe
 - Docker Desktop **24+** (or Docker Engine + Docker Compose plugin)
 - cd into the SystemCode directory
 
-#### Run this command in the terminal once Docker has been setup & initialized
+#### Run this command under /SystemCode in the terminal once Docker has been setup & initialized
 
 ```bash
 docker compose up --build
 ```
 
 - Assuming your docker build went well you should see a message like this:
-  ![Docker Build Success](SystemCode/image/README/1745951017406.png)
+  ![Docker Build Success](SystemCode/image/docker-success.jpg)
 
 #### Once your build completes go to your browser (preferably chrome) and open http://localhost:3000/
 
