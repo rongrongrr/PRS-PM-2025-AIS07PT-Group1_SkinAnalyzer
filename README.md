@@ -1,6 +1,6 @@
 ﻿## SECTION 1 : PROJECT TITLE
 
-## Skin Analyzer
+## Skin Condition Analyzer
 
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
